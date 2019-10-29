@@ -18,12 +18,12 @@ public class GUIEye : MonoBehaviour {
 
 	void Start () {
         // Get the parts of the eye
-        leftEye = transform.FindChild("LeftEye").gameObject;
-        leftEyeBall = leftEye.transform.FindChild("EyeBall").gameObject;
+        leftEye = transform.Find("LeftEye").gameObject;
+        leftEyeBall = leftEye.transform.Find("EyeBall").gameObject;
         leftEyeImage = leftEyeBall.GetComponent<Image>();
 
-        rightEye = transform.FindChild("RightEye").gameObject;
-        rightEyeBall = rightEye.transform.FindChild("EyeBall").gameObject;
+        rightEye = transform.Find("RightEye").gameObject;
+        rightEyeBall = rightEye.transform.Find("EyeBall").gameObject;
         rightEyeImage = rightEyeBall.GetComponent<Image>();
 
         // Ellipse

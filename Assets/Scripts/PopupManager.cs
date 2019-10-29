@@ -54,7 +54,7 @@ public class PopupManager : Singleton<PopupManager> {
         popupInstanceImage.color = attributes.backgroundColor;
 
         for (int i = 0; i < 2; i++) {
-            Text text = popupInstanceButtonTwo[i].GetComponentInChildren<Text>();
+            TextMeshProUGUI text = popupInstanceButtonTwo[i].GetComponentInChildren<TextMeshProUGUI>();
 
             text.text = attributes.buttonText[i];
             text.color = attributes.buttonTextColor[i];
@@ -93,7 +93,7 @@ public class PopupManager : Singleton<PopupManager> {
         popupInstanceImage.color = attributes.backgroundColor;
 
         // Set text for button
-        Text text = popupInstanceButtonOne.GetComponentInChildren<Text>();
+        TextMeshProUGUI text = popupInstanceButtonOne.GetComponentInChildren<TextMeshProUGUI>();
 
         text.text = attributes.buttonText;
         text.color = attributes.buttonTextColor;
@@ -142,7 +142,6 @@ public class PopupManager : Singleton<PopupManager> {
             popupInstanceButtonTwo[0] = twoButtonPanel.transform.GetChild(0).GetComponent<Button>();
             popupInstanceButtonTwo[1] = twoButtonPanel.transform.GetChild(1).GetComponent<Button>();
         }
-
 
         popupInstanceButtonOne.onClick.RemoveAllListeners();
         popupInstanceButtonTwo[0].onClick.RemoveAllListeners();

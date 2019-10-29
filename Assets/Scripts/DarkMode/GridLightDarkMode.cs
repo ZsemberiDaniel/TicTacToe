@@ -15,14 +15,14 @@ public class GridLightDarkMode : MonoBehaviour {
     }
     
     public void ToLightMode(float time) {
-        foreach (Transform transform in transform) {
-            transform.GetComponent<SpriteRenderer>().DOColor(lightModeColor, time);
+        foreach (Transform t in transform) {
+            t.GetComponent<SpriteRenderer>().DOColor(lightModeColor, time);
         }
     }
 
     public void ToDarkMode(float time) {
-        foreach (Transform transform in transform) {
-            transform.GetComponent<SpriteRenderer>().DOColor(darkModeColor, time);
+        foreach (Transform t in transform) {
+            t.GetComponent<SpriteRenderer>().DOColor(darkModeColor, time);
         }
     }
 

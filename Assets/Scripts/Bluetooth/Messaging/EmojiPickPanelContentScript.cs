@@ -115,7 +115,7 @@ public class EmojiPickPanelContentScript : MonoBehaviour {
             currentlyEnabled.transform.parent.GetComponent<EmojiButtonScript>().isEnabled = false;
         }
 
-        currentlyEnabled = transform.FindChild(name).GetChild(1).gameObject;
+        currentlyEnabled = transform.Find(name).GetChild(1).gameObject;
 
         currentlyEnabled.GetComponent<RectTransform>().DOScale(1.2f, 0.3f);
         currentlyEnabled.GetComponent<Image>().color = Color.white;

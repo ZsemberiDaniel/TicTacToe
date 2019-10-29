@@ -38,7 +38,7 @@ public class RewardPanelScript : MonoBehaviour {
 
         canvasScaler = transform.parent.GetComponent<CanvasScaler>();
         
-        // LevelUpAnimation();
+        LevelUpAnimation();
     }
 
     private float firstPanelAnim = 1f;
@@ -181,8 +181,7 @@ public class RewardPanelScript : MonoBehaviour {
     }
 
     private IEnumerator AfterAllCratesBroken() {
-        bool allBroken = false;
-        if (crates.Length == 0) allBroken = true;
+        bool allBroken = crates.Length == 0;
         while (!allBroken) { 
             if (crates == null) yield return null;
 

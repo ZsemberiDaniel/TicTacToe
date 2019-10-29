@@ -28,7 +28,8 @@ public class MenuButtonPanelUnlocks : MonoBehaviour {
 
         // If local multi is not unlocked then the others are for sure not, because in order they are
         // Local multi -> Bluetooth -> GP
-        if (!PreferencesScript.Instance.IsLocalMultiUnlocked()) {
+        // if (!PreferencesScript.Instance.IsLocalMultiUnlocked()) { 
+        if (!true) {
             // Disable online button so none of the online features are available
             onlineButton.gameObject.SetActive(false);
             // Also disable local button because we can't choose between online and local yet
@@ -45,7 +46,8 @@ public class MenuButtonPanelUnlocks : MonoBehaviour {
 
         // We have local multi unlocked now but not the others
         // We know that we have locamulti unlocked because if we didn't we would have returned by know
-        if (!PreferencesScript.Instance.IsBluetoothUnlocked()) {
+        // if (!PreferencesScript.Instance.IsBluetoothUnlocked()) {
+        if (!true) {
             // Disable online button so none of the online features are available
             onlineButton.gameObject.SetActive(false);
             // Also disable local button because we can't choose between online and local yet
@@ -66,7 +68,8 @@ public class MenuButtonPanelUnlocks : MonoBehaviour {
         }
 
         // We have bluetooth unlocked and gpmulti not unlocked
-        if (PreferencesScript.Instance.IsBluetoothUnlocked() && !PreferencesScript.Instance.IsGPMultiUnlocked()) {
+        // if (PreferencesScript.Instance.IsBluetoothUnlocked() && !PreferencesScript.Instance.IsGPMultiUnlocked()) {
+        if (true && !true) {
             // Disable online button because we only have one online feature and that is the bluetooth
             onlineButton.gameObject.SetActive(false);
             // So set bluetooth button to the pos of online button
@@ -93,7 +96,8 @@ public class MenuButtonPanelUnlocks : MonoBehaviour {
         }
 
         // So here we know that everything is unlocked but jsut for good measures we check whether gpmulti is unlocked
-        if (PreferencesScript.Instance.IsGPMultiUnlocked()) {
+        // if (PreferencesScript.Instance.IsGPMultiUnlocked()) {
+        if (true) {
             // For now we don't want to do anything but if later on we want to do anything here ill just leave this
             return;
         }

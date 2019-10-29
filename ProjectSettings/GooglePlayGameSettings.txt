@@ -1,5 +1,5 @@
-lastUpgrade=00936
-proj.pluginVersion=0.9.36
+lastUpgrade=01005
+proj.pluginVersion=0.10.05
 proj.AppId=818766073019
 and.BundleId=com.zsemberi.tictactoe
 proj.classDir=Assets

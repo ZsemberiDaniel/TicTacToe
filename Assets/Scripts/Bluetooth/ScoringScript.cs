@@ -15,13 +15,13 @@ public class ScoringScript : MonoBehaviour {
     private float height;
 
     void Start() {
-        xText = transform.FindChild("XText").GetComponent<Text>();
-        oText = transform.FindChild("OText").GetComponent<Text>();
+        xText = transform.Find("XText").GetComponent<Text>();
+        oText = transform.Find("OText").GetComponent<Text>();
 
         height = oText.rectTransform.rect.height;
 
-        transform.FindChild("XImage").GetComponent<Image>().color = SignResourceStorage.Instance.xColor;
-        transform.FindChild("OImage").GetComponent<Image>().color = SignResourceStorage.Instance.oColor;
+        transform.Find("XImage").GetComponent<Image>().color = SignResourceStorage.Instance.xColor;
+        transform.Find("OImage").GetComponent<Image>().color = SignResourceStorage.Instance.oColor;
     }
 
     public void SetScore(int x, int o) {

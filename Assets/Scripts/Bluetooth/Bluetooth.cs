@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
 
 public class Bluetooth
@@ -16,7 +17,6 @@ public class Bluetooth
         }
         return Instance_obj;
     }
-
     private void PluginStart()//Start to initialize the plugin
     {
 	    _plugin = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
@@ -26,7 +26,7 @@ public class Bluetooth
     }
     public string Send(string message)//Send specific message to the connected device
     {
-        return _activityObject.Call<string>("sendMessage", message + "|||");
+        return _activityObject.Call<string>("sendMessage", message);
     }
     public string SearchDevice()//Search Device Function to search for other devices
     {

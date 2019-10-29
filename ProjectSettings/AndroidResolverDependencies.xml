@@ -1,0 +1,22 @@
+<dependencies>
+  <packages>
+    <package>com.google.games:gpgs-plugin-support:0.10.05</package>
+  </packages>
+  <files>
+    <file>Assets/GooglePlayGames/Editor/m2repository/com/google/games/gpgs-plugin-support/0.10.04/gpgs-plugin-support-0.10.04.aar</file>
+    <file>Assets/GooglePlayGames/Editor/m2repository/com/google/games/gpgs-plugin-support/0.10.05/gpgs-plugin-support-0.10.05.aar</file>
+  </files>
+  <settings>
+    <setting name="androidAbis" value="armeabi-v7a,x86" />
+    <setting name="bundleId" value="com.zsemberi.tictactoe" />
+    <setting name="explodeAars" value="True" />
+    <setting name="gradleBuildEnabled" value="True" />
+    <setting name="gradleTemplateEnabled" value="True" />
+    <setting name="installAndroidPackages" value="True" />
+    <setting name="packageDir" value="Assets/Plugins/Android" />
+    <setting name="patchAndroidManifest" value="True" />
+    <setting name="patchMainTemplateGradle" value="True" />
+    <setting name="projectExportEnabled" value="False" />
+    <setting name="useJetifier" value="True" />
+  </settings>
+</dependencies>

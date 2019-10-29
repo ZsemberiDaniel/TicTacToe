@@ -1,26 +1,34 @@
 fileFormatVersion: 2
-guid: 6a2c93ced4be4d91b1bd326c07b1f95f
+guid: bb6999c8a5ce4ba99688ec579babe5b7
 labels:
 - gvh
-- gvh_teditor
-- gvh_v1.2.9.0
-timeCreated: 1473798236
-licenseType: Pro
+- gvh_targets-editor
+- gvh_version-0.10.05
 PluginImporter:
-  serializedVersion: 1
+  externalObjects: {}
+  serializedVersion: 2
   iconMap: {}
   executionOrder: {}
+  defineConstraints: []
   isPreloaded: 0
   isOverridable: 0
+  isExplicitlyReferenced: 0
+  validateReferences: 1
   platformData:
-    Any:
+  - first:
+      Any: 
+    second:
       enabled: 0
       settings: {}
-    Editor:
+  - first:
+      Editor: Editor
+    second:
       enabled: 1
       settings:
         DefaultValueInitialized: true
-    WindowsStoreApps:
+  - first:
+      Windows Store Apps: WindowsStoreApps
+    second:
       enabled: 0
       settings:
         CPU: AnyCPU

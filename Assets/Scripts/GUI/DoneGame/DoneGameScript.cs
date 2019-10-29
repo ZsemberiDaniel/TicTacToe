@@ -14,7 +14,7 @@ public class DoneGameScript : MonoBehaviour {
     private SpriteRenderer[] childrenSR;
 
     void Start () {
-        signParent = transform.FindChild("Signs").gameObject;
+        signParent = transform.Find("Signs").gameObject;
         childrenSR = signParent.GetComponentsInChildren<SpriteRenderer>();
 
         UpdateBordercolor(SignResourceStorage.Instance.GetColorRelatedTo(winType));
@@ -65,7 +65,7 @@ public class DoneGameScript : MonoBehaviour {
     /// </summary>
     /// <param name="borderColor"></param>
     public void UpdateBordercolor(Color borderColor) {
-        GameObject child = transform.FindChild("Border").gameObject;
+        GameObject child = transform.Find("Border").gameObject;
         LineRenderer lr = child.GetComponent<LineRenderer>();
         Material mat = lr.material;
         mat.SetColor("_EmissionColor", borderColor);

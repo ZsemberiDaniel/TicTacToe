@@ -39,8 +39,8 @@ public class ExpBarScript : MonoBehaviour {
     private void OnScreenChange(string from, string to) {
         if (disableOnScreens == null) return;
 
-        for (int i = 0; i < disableOnScreens.Length; i++) {
-            if (to == disableOnScreens[i]) {
+        foreach (var t in disableOnScreens) {
+            if (to == t) {
                 canvasGroup.alpha = 0f;
                 canvasGroup.blocksRaycasts = false;
                 canvasGroup.interactable = false;
